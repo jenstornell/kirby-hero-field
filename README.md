@@ -2,6 +2,8 @@
 
 This field is a modified copy of the `image` field. The only difference is that you will have a large image preview.
 
+![](https://raw.githubusercontent.com/jenstornell/kirby-hero-field/master/hero.png)
+
 ## What is a hero?
 
 A hero image is a large image that is often placed as a big header image on the site.
