@@ -1,37 +1,76 @@
-# Kirby hero field
+# Kirby Boiler Field
 
-This field is a modified copy of the `image` field. The only difference is that you will have a large image preview.
+*Version 2.0*
 
-![](https://raw.githubusercontent.com/jenstornell/kirby-hero-field/master/hero.png)
+There is not much documentation about Kirby form fields. As a solution to the problem I created a boilerplate for it.
 
-## What is a hero?
+**[Intallation instructions](docs/install.md)**
 
-A hero image is a large image that is often placed as a big header image on the site.
+## Features
 
-## When to use the hero field
+### Textfield
 
-- Use the hero field if you want a large full scale preview.
-- Use the hero field for horizontal images.
-- Don't use the hero field for vertical images.
+- Extends basefield.
+- Includes field [routes](https://forum.getkirby.com/t/routing-in-custom-form-field/3101/7).
+- [Connects field to javascript](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
+- Includes ajax request. Output data to the console.
 
-## Installation
+### Checkboxesfield
 
-1. Put the folder `hero` inside `site/fields/`.
-2. Add it to your blueprint.
+- Extends checkboxesfield.
+- Inherit values from the options.
+- Appends own values.
 
-## Blueprint
+## Setup
 
-```yaml
+### Blueprint
+
+To make it work as expected, add the following code to your blueprint:
+
+#### Textfield
+
+```text
 fields:
-  my_hero:
-    label: Hero image
-    type: hero
+  boilertext:
+    title: Your Field1
+    type: boilertext
 ```
 
-## Compability
+#### Checkboxfield
 
-If you have an `image` field and want to switch to the `hero` field it's possible. They are compatible so you can switch between them.
+```text
+fields:
+  boilercheckboxes:
+    title: Your Field2
+    type: boilercheckboxes
+```
 
-## Version
+## Changelog
 
-This field is tested with Kirby 2.3 development branch.
+**2.0**
+
+- Register as plugin instead of field
+- Renamed field from `boiler` to `boilertext`
+- Added field `boilercheckboxes`
+
+**1.0**
+
+- Initial release
+
+## Requirements
+
+- [**Kirby**](https://getkirby.com/) 2.0+
+
+## Disclaimer
+
+This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/jenstornell/kirby-boiler-field/issues/new).
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
+
+## Credits
+
+- [Jens Törnell](https://github.com/jenstornell)

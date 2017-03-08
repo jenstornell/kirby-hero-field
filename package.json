@@ -1,0 +1,8 @@
+{
+  "name": "kirby-hero-field",
+  "description": "Hero image field for Kirby CMS",
+  "author": "Jens Törnell <jens.tornell@gmail.com>",
+  "version": "2.0",
+  "type": "kirby-plugin",
+  "license": "MIT"
+}

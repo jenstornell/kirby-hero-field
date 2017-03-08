@@ -1,0 +1,8 @@
+.hero-image {
+	margin-top: .5em;
+	display: none;
+}
+
+.hero-image.active {
+	display: block;
+}
