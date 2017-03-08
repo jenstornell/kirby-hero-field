@@ -1,57 +1,34 @@
-# Kirby Boiler Field
+# Kirby Hero Field
 
 *Version 2.0*
 
-There is not much documentation about Kirby form fields. As a solution to the problem I created a boilerplate for it.
+Large image preview below the field. Best suited for wide images.
 
-**[Intallation instructions](docs/install.md)**
-
-## Features
-
-### Textfield
-
-- Extends basefield.
-- Includes field [routes](https://forum.getkirby.com/t/routing-in-custom-form-field/3101/7).
-- [Connects field to javascript](https://forum.getkirby.com/t/panel-field-javascript-click-does-not-work-after-save/3474/7).
-- Includes ajax request. Output data to the console.
-
-### Checkboxesfield
-
-- Extends checkboxesfield.
-- Inherit values from the options.
-- Appends own values.
+![](docs/screenshot.png)
 
 ## Setup
 
-### Blueprint
+### 1. Blueprint
 
 To make it work as expected, add the following code to your blueprint:
 
-#### Textfield
-
-```text
-fields:
-  boilertext:
-    title: Your Field1
-    type: boilertext
 ```
-
-#### Checkboxfield
-
-```text
 fields:
-  boilercheckboxes:
-    title: Your Field2
-    type: boilercheckboxes
+  yourfield:
+    label: 
+    type: hero
 ```
 
 ## Changelog
 
 **2.0**
 
-- Register as plugin instead of field
-- Renamed field from `boiler` to `boilertext`
-- Added field `boilercheckboxes`
+- Complete rewrite.
+- CLI compatible.
+- Now as a plugin instead of a field.
+- Now extends the image field.
+- Keeping the image field preview and append a hero preview below the field.
+- Less code because of more thing inherit from the core. 
 
 **1.0**
 
@@ -59,11 +36,11 @@ fields:
 
 ## Requirements
 
-- [**Kirby**](https://getkirby.com/) 2.0+
+- [**Kirby**](https://getkirby.com/) 2.4.1+
 
 ## Disclaimer
 
-This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/jenstornell/kirby-boiler-field/issues/new).
+This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/jenstornell/kirby-hero-field/issues/new).
 
 ## License
 
