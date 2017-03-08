@@ -4,6 +4,11 @@
 
 Large image preview below the field. Best suited for wide images.
 
+**Features**
+
+- Multi language support.
+- Multi instances support.
+
 **Screenshot**
 
 ![](docs/screenshot.png)
@@ -11,6 +16,8 @@ Large image preview below the field. Best suited for wide images.
 **Animation**
 
 ![](docs/animation.gif)
+
+**[Installation instructions](docs/install.md)**
 
 ## Setup
 
