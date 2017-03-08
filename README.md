@@ -4,7 +4,13 @@
 
 Large image preview below the field. Best suited for wide images.
 
+**Screenshot**
+
 ![](docs/screenshot.png)
+
+**Animation**
+
+![](docs/animation.gif)
 
 ## Setup
 
