@@ -28,7 +28,7 @@ To make it work as expected, add the following code to your blueprint:
 ```
 fields:
   yourfield:
-    label: 
+    label: Hero
     type: hero
 ```
 
